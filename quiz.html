@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="Quiz.css">
 </head>
 <body>
-    <article>
-    <h1>Operating System Quiz</h1>
+    <article id = "startGame">
+        <h1>Want to play?<br>Smart Quiz Game</h1>
+        <button id = "startButton" onclick="start()">Start</button>
+    </article>
+    <article id = "page" class = "hidden">
+    <h1>Smarts Quiz</h1>
 
     <h3 id = "question"></h3>
 
@@ -21,7 +25,22 @@
         <br>
         <button id="button3" class = "button" onclick = check(event)></button>
     </section>
-</article>
+        <h3 id = "count">Count: 0 / 10</h3>
+    </article>
+    
+    <article id = "show" class="hidden">
+        <h3 id = "results"></h3>
+        <h1>One More?</h1>
+        <button id="yes" class = "anotherButton" onclick = restartGame()>Yes</button>
+        <button id="no" class = "anotherButton" onclick="no()">No</button>
+    </article>
+    
+    <article id = "endContent" class = "hidden">
+        <h1>Thank You For Playing!</h1>
+        <h3>See you next time!</h3>
+        <p>What to invite freinds?    <img src="whatsapp-icon.png" alt="whatsapp icon" width="26px"></p>
+    </article>
+
     <script src="Quiz.js"></script>
 </body>
 </html>
